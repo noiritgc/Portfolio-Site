@@ -13,22 +13,46 @@ export default function Home() {
 
   const skills = [
     { name: 'JavaScript/TypeScript', level: 'Advanced' },
+    {name: 'Java', level: 'Advanced'},
     { name: 'React/Next.js', level: 'Advanced' },
     { name: 'Node.js', level: 'Intermediate' },
     { name: 'Python', level: 'Intermediate' },
-    { name: 'SQL', level: 'Intermediate' },
     { name: 'Git', level: 'Advanced' },
+    { name: 'Mobile Development', level: 'Advanced'},
+    {name: 'Web Development', level: 'Advanced'},
+    {name: 'Calculus', level: 'Intermediate'}
+
   ];
 
   const projects = [
     {
-      title: 'Project Name',
-      description: 'Brief description of the project and your role in it.',
-      technologies: ['React', 'Node.js', 'MongoDB'],
+      title: 'Just Intonation Mobile App',
+      description: '🚧 In Progress: Developing a mobile application for a client focused on Just Intonation music theory and practice. Currently implementing core features and UI components.',
+      technologies: ['React Native', 'JavaScript', 'Expo'],
       link: '#',
-      image: '/project-placeholder.jpg'
+      image: '/project-icons/just-intonation.svg'
     },
-    // Add more projects as needed
+    {
+      title: 'Musical Fingering Apps',
+      description: '🚧 In Progress: Creating a mobile application for musical instrument fingering charts and practice tools. Currently in the initial development phase.',
+      technologies: ['React Native', 'TypeScript', 'Expo'],
+      link: '#',
+      image: '/project-icons/musical-fingering.svg'
+    },
+    {
+      title: 'Media Site Platform',
+      description: '🚧 In Progress: Building a Flask-based website for sentiment analysis of media sources. Currently setting up the backend infrastructure and database models.',
+      technologies: ['Python', 'Flask', 'HTML/CSS'],
+      link: '#',
+      image: '/project-icons/media-site.svg'
+    },
+    {
+      title: 'Dublin Food Pantry Database',
+      description: '🚧 In Progress: Developing a comprehensive database system to improve operations and service delivery for the Dublin Food Pantry. Currently in the design and planning phase.',
+      technologies: ['Database Design'],
+      link: '#',
+      image: '/project-icons/food-pantry.svg'
+    }
   ];
 
   const experiences = [
@@ -38,9 +62,9 @@ export default function Home() {
       duration: 'January 2025 - Present',
       logo: '/logos/freelance.svg',
       achievements: [
-        'Developing custom web applications and solutions for clients',
-        'Managing client relationships and project timelines',
-        'Implementing modern web technologies and best practices'
+        'Developing custom mobile applications and solutions for clients',
+        'Managing client relationships and project timelines'
+      
       ]
     },
     {
@@ -49,7 +73,7 @@ export default function Home() {
       duration: 'July 2024 - Present',
       logo: '/logos/trigsaw.svg',
       achievements: [
-        'Creating educational content for programming and technology',
+        'Creating educational content for Physics and Calculus',
         'Building a community of learners and developers',
         'Developing engaging tutorials and learning materials'
       ]
@@ -113,10 +137,10 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                I am a passionate software developer with a strong foundation in web development and a keen interest in creating efficient, scalable solutions. With experience in both frontend and backend technologies, I strive to build applications that make a positive impact.
+                I am a passionate software developer with a strong foundation in web and mobile development and a keen interest in creating efficient, scalable solutions. With experience in both frontend and backend technologies, I strive to build applications that make a positive impact.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                When I'm not coding, you can find me [Your interests/hobbies]. I believe in continuous learning and staying up-to-date with the latest technologies and best practices in software development.
+                When I'm not coding, you can find me playing the clarinet. I believe in continuous learning and staying up-to-date with the latest technologies and best practices in software development.
               </p>
             </div>
           </motion.div>
@@ -220,12 +244,13 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-white dark:bg-gray-900 rounded-lg shadow-sm overflow-hidden"
                 >
-                  <div className="relative h-48">
+                  <div className="relative h-32 flex items-center justify-center bg-gray-50 dark:bg-gray-800">
                     <Image
                       src={project.image}
                       alt={project.title}
-                      fill
-                      className="object-cover"
+                      width={48}
+                      height={48}
+                      className="object-contain"
                     />
                   </div>
                   <div className="p-6">
@@ -241,55 +266,15 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-900 dark:text-white hover:underline"
+                    <button
+                      onClick={() => alert('This project is currently under development. Check back soon!')}
+                      className="text-gray-900 dark:text-white hover:underline cursor-pointer"
                     >
                       View Project →
-                    </a>
+                    </button>
                   </div>
                 </motion.div>
               ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl font-bold mb-12 text-center">Testimonials</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  "Noirit is an exceptional developer who consistently delivers high-quality work. Their attention to detail and problem-solving skills are outstanding."
-                </p>
-                <div className="flex items-center">
-                  <div className="ml-3">
-                    <p className="font-semibold">John Doe</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Senior Developer, Company</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  "Working with Noirit was a pleasure. They bring creativity and technical expertise to every project."
-                </p>
-                <div className="flex items-center">
-                  <div className="ml-3">
-                    <p className="font-semibold">Jane Smith</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">Project Manager, Company</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>
@@ -310,7 +295,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center gap-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/noiritgc?tab=overview&from=2025-06-01&to=2025-06-08"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -320,7 +305,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/yourusername"
+                href="https://instagram.com/noiritgc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -330,7 +315,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:noiritgc@gmail.com"
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

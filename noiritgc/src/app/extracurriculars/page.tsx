@@ -28,13 +28,27 @@ export default function Extracurriculars() {
             </div>
 
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-semibold mb-4">Robotics Club</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Member & Programmer • 2022 - Present</p>
+              <div className="prose dark:prose-invert max-w-none">
+                <p>Active member of the school's Robotics Club, contributing to robot programming and competitions.</p>
+                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                  <li>Developed and implemented subsytems with Gyroscopes and Super-Sonic Sensors</li>
+                  <li>Collaborated with team members to design and optimize robot functionality</li>
+                  <li>Participated in robotics competitions, applying programming skills to solve real-world challenges</li>
+                  <li>Gained hands-on experience with robotics hardware and software integration</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
               <h2 className="text-2xl font-semibold mb-4">Dublin Coffman Music Program</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Marching Band Member & Officer • 2020 - Present</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Marching Band Member & Officer • 2022 - Present</p>
               <div className="prose dark:prose-invert max-w-none">
                 <p>Active participant in both the Dublin Coffman Marching Band and Concert Band, demonstrating leadership and musical excellence.</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                  <li>Achieved First Chair position, showcasing exceptional musical ability and dedication</li>
-                  <li>Performed multiple solo performances, demonstrating advanced technical skills</li>
+                  <li>Achieved First Chair position, showcasing musical ability and dedication</li>
+                  <li>Performed multiple solo performances, demonstrating technical skills</li>
                   <li>Served as a three-time Squad Leader, mentoring and guiding fellow band members</li>
                   <li>Elected as an officer, contributing to program leadership and organizational success</li>
                 </ul>
@@ -43,20 +57,21 @@ export default function Extracurriculars() {
 
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
               <h2 className="text-2xl font-semibold mb-4">Educational Content Creator</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Trigsaw YouTube Channel • 2022 - Present</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Trigsaw YouTube Channel • 2024 - Present</p>
               <div className="prose dark:prose-invert max-w-none">
                 <p>Creator and host of the Trigsaw YouTube channel, producing educational content focused on Physics and Calculus concepts.</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
                   <li>Develop and produce engaging educational videos explaining complex mathematical and scientific concepts</li>
                   <li>Create clear, accessible content that helps students understand challenging topics in Physics and Calculus</li>
                   <li>Demonstrate strong communication skills through effective explanation of technical concepts</li>
+                  <li>100+ Subscribers & 2500+ Views</li>
                 </ul>
               </div>
             </div>
 
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-sm">
               <h2 className="text-2xl font-semibold mb-4">Freelance Mobile Developer</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Independent Developer • 2023 - Present</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Independent Developer • 2025 - Present</p>
               <div className="prose dark:prose-invert max-w-none">
                 <p>Independent mobile app developer working with multiple clients to create custom React Native applications.</p>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
